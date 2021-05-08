@@ -1,4 +1,11 @@
-# HTTrack Website Copier - Development Repository
+# Fork of HTTrack Website Copier - Development Repository
+
+## Modified
+Add VS2017 project/solution(commandline tools only).
+
+Support lazy loading attribute(data-src, data-srcset).
+
+Support image/webp mime.
 
 ## About
 _Copy websites to your computer (Offline browser)_
