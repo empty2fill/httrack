@@ -1,0 +1,16 @@
+vcpkg install zlib:x86-windows-v141
+vcpkg install zlib:x64-windows-v141
+vcpkg install openssl:x86-windows-v141
+vcpkg install openssl:x64-windows-v141
+
+vcpkg export zlib:x86-windows-v141 --nuget --nuget-id=zlib-v141-x86 --nuget-version=1.2.11
+vcpkg export zlib:x64-windows-v141 --nuget --nuget-id=zlib-v141-x64 --nuget-version=1.2.11
+vcpkg export openssl:x86-windows-v141 --nuget --nuget-id=openssl-v141-x86 --nuget-version=1.1.1
+vcpkg export openssl:x64-windows-v141 --nuget --nuget-id=openssl-v141-x64 --nuget-version=1.1.1
+
+
+Tools > NuGet Package Manager > Package Manager Console
+Install-Package zlib-v141-x86 -Source "vcpkg"
+Install-Package zlib-v141-x64 -Source "vcpkg"
+Install-Package openssl-v141-x86 -Source "vcpkg"
+Install-Package openssl-v141-x64 -Source "vcpkg"
