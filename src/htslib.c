@@ -372,6 +372,7 @@ const char *hts_mime[][2] = {
   {"chemical/x-pdb", "pdb"},
   {"chemical/x-pdb", "xyz"},
   {"drawing/x-dwf", "dwf"},
+  {"image/webp", "webp"},
   {"image/gif", "gif"},
   {"image/ief", "ief"},
   {"image/jpeg", "jpg"},
