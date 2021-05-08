@@ -35,6 +35,7 @@ Please visit our Website: http://www.httrack.com
 #define HTSBAUTH_DEFH
 
 #include <sys/types.h>
+#include <stddef.h>
 
 // robots wizard
 #ifndef HTS_DEF_FWSTRUCT_bauth_chain

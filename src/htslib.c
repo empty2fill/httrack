@@ -2769,7 +2769,12 @@ static time_t getGMT(struct tm *tm) {   /* hey, time_t is local! */
     time_t now = time(NULL);
     time_t timezone = -localtime(&now)->tm_gmtoff;
 #endif
-    return (time_t) (t - timezone);
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1910)
+    return (time_t) (t - _timezone);
+#else
+	return (time_t) (t - timezone);
+#endif
   }
   return (time_t) - 1;
 }
