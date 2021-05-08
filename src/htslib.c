@@ -119,6 +119,8 @@ const char *hts_detect[] = {
   "lowsrc",
   "profile",                    // element META
   "src",
+  "data-src",
+  "data-srcset",
   "swurl",
   "url",
   "usemap",
